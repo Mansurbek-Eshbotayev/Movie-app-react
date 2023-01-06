@@ -1,0 +1,12 @@
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+.move__list{
+  margin: 0;
+  padding: 120px 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
