@@ -26,7 +26,7 @@ export const SingleMovie = () => {
   
   useEffect(()=> {
     getSingleMovie()
-  },[id])
+  },[])
   
   return (
     <>
@@ -35,7 +35,7 @@ export const SingleMovie = () => {
     {single.data ? <section className='single__move'>
     {
       single.data.map((item) => (
-        <div className="single__info" style={{ backgroundImage: `url(${BK_IMG_URL}/${item.backdrop_path})`
+        <div key={item.id} className="single__info" style={{ backgroundImage: `url(${BK_IMG_URL}/${item.backdrop_path})`
       }}>
       <div className="sinhgle__over">
         <div className="container">

@@ -1,10 +1,8 @@
 
-
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import { api, BASE_IMG_URL,  } from '../../API/API';
 import "./similar.css"
-import "./Carousel"
 import Slider from 'react-slick';
 import "../../../node_modules/slick-carousel/slick/slick.css"; 
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
@@ -31,7 +29,7 @@ export const SimilarMovie = ({id}) => {
 
   useEffect(()=> {
     getLikeMovie()
-  },[id])
+  },[])
 
   const settings = {
     dots: true,
