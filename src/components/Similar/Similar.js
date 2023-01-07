@@ -29,7 +29,7 @@ export const SimilarMovie = ({id}) => {
 
   useEffect(()=> {
     getLikeMovie()
-  },[])
+  },[id])
 
   const settings = {
     dots: true,

@@ -26,7 +26,7 @@ export const SingleMovie = () => {
   
   useEffect(()=> {
     getSingleMovie()
-  },[])
+  },[id])
   
   return (
     <>
